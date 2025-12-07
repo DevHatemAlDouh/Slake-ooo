@@ -1,0 +1,5 @@
+flask
+slack_sdk
+python-dotenv
+apscheduler
+requests
