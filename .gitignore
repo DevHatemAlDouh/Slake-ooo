@@ -1,0 +1,23 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment and secrets
+# .env
+# *.log
+# db.json
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Render deployment helpers
+*.bat
+
+# Git metadata (already ignored by default)
+.git/
+
+# VSCode or IDE configs
+.vscode/
+.idea/
