@@ -206,7 +206,7 @@ def slash_command():
 
     # --- OOO scheduling ---
     parts = text.split()
-    if text == "" and user_id not in db["users"]::
+    if text == "" and user_id not in db["users"]:
         log_command(user_id, text,"You need to install the app first! Use /ooo install")
         return make_response("You need to install the app first! Use /ooo install", 200)
 
