@@ -4,9 +4,9 @@ __pycache__/
 *.pyo
 
 # Environment and secrets
-# .env
-# *.log
-# db.json
+.env
+*.log
+db.json
 
 # OS-specific
 .DS_Store
