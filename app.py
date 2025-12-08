@@ -206,8 +206,12 @@ def slash_command():
 
     # --- OOO scheduling ---
     parts = text.split()
+    if text == "" and user_id not in db["users"]::
+        log_command(user_id, text,"You need to install the app first! Use /ooo install")
+        return make_response("You need to install the app first! Use /ooo install", 200)
+
     if len(parts) < 4:
-        print(text)
+        log_command(user_id, text,"Format: YYYY-MM-DD HH:MM-HH:MM :emoji: status_text")
         return make_response("Format: YYYY-MM-DD HH:MM-HH:MM :emoji: status_text", 200)
 
     date = parts[0]
