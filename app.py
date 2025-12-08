@@ -41,7 +41,7 @@ def save_db(db):
         json.dump(db, f, indent=2)
 
 def log_command(user_id, command_text,description):
-    print(f"{datetime.now().isoformat()} | User: {user_id} | Command: {command_text} | Description: {description}\n")
+    # print(f"{datetime.now().isoformat()} | User: {user_id} | Command: {command_text} | Description: {description}\n")
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"{datetime.now().isoformat()} | User: {user_id} | Command: {command_text} | Description: {description}\n")
 
